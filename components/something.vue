@@ -1,9 +1,15 @@
 <template>
   <div>
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <section v-show="showPanel" class="n">
-      <div class="">
+    <section
+      class="fixed inset-0 overflow-hidden pointer-events-none"
+      aria-labelledby="slide-over-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="absolute inset-0 overflow-hidden">
         <!-- Background overlay, show/hide based on slide-over state. -->
+        <div class="absolute inset-0 overflow-hidden" aria-hidden="true"></div>
 
         <div class="absolute inset-y-0 right-0 flex max-w-full pl-10">
           <!--
@@ -31,8 +37,7 @@
 
                   <div class="flex items-center h-7">
                     <button
-                      @click="showPanel = !showPanel"
-                      class="text-gray-400 bg-white rounded-md hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 animated slideInRight"
+                      class="text-gray-400 bg-white rounded-md hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
                       <span class="sr-only">Close panel</span>
                       <!-- Heroicon name: outline/x -->
@@ -67,6 +72,8 @@
                         >Corp Code</label
                       >
                       <select
+                        id="country"
+                        name="country"
                         autocomplete="country"
                         class="block w-full px-3 py-2 mt-1 text-xs truncate bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900"
                       >
@@ -81,6 +88,8 @@
                         >Order Type</label
                       >
                       <select
+                        id="country"
+                        name="country"
                         autocomplete="country"
                         class="w-full px-3 py-2 mt-1 text-xs truncate bg-white border border-gray-300 rounded-md shadow-sm lock focus:outline-none focus:ring-gray-900 focus:border-gray-900"
                       >
@@ -90,55 +99,71 @@
                       </select>
                     </div>
                     <div class="col-span-2">
-                      <label class="block text-xs font-medium text-gray-700"
+                      <label
+                        for="last_name"
+                        class="block text-xs font-medium text-gray-700"
                         >Log Number</label
                       >
                       <input
                         type="text"
+                        name="last_name"
+                        id="last_name"
                         autocomplete="cc-family-name"
                         class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
                       <label
+                        for="last_name"
                         class="block mt-2 text-xs font-medium text-gray-700"
                         >Client Number</label
                       >
                       <input
                         type="text"
+                        name="last_name"
+                        id="last_name"
                         autocomplete="cc-family-name"
                         class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
                       <label
+                        for="last_name"
                         class="block mt-2 text-xs font-medium text-gray-700"
                         >Unit Number</label
                       >
                       <input
                         type="text"
+                        name="last_name"
+                        id="last_name"
                         autocomplete="cc-family-name"
                         class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
                       <label
+                        for="last_name"
                         class="block mt-2 text-xs font-medium text-gray-700"
                         >VIN</label
                       >
                       <input
                         type="text"
+                        name="last_name"
+                        id="last_name"
                         autocomplete="cc-family-name"
                         class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
                     </div>
                     <div class="lg:col-span-1 md:col-span-2 sm:col-span-1">
                       <label
+                        for="last_name"
                         class="block mt-2 text-xs font-medium text-gray-700"
                         >Current Status</label
                       >
                       <input
                         type="text"
+                        name="last_name"
+                        id="last_name"
                         autocomplete="cc-family-name"
                         class="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:"
                       />
@@ -149,6 +174,20 @@
                     >
                       Filter
                       <!-- Heroicon name: solid/mail -->
+                      <svg
+                        class="w-5 h-5 ml-3 -mr-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                        />
+                        <path
+                          d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                        />
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -164,13 +203,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      showPanel: true,
-    }
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped></style>

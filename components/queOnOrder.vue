@@ -1,8 +1,8 @@
 <template>
   <div>
-    <table class="table-auto">
+    <table class="relative w-full table-auto">
       <thead class="text-left bg-element-bright-blue">
-        <tr class="align-top">
+        <tr class="sticky align-top top-96">
           <th
             scope="col"
             class="p-2 text-xs font-medium text-left text-white"
@@ -936,7 +936,12 @@
 </template>
 
 <script>
+import overflow from '/components/overflow'
+
 export default {
+  components: {
+    overflow,
+  },
   props: {
     property: {
       type: Object,

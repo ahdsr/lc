@@ -10,9 +10,7 @@
 
     <div class="z-20"><sideNav /></div>
 
-    <h1 class="relative pl-40 text-xl font-medium tracking-tight top-8">
-      Order Maintanance
-    </h1>
+    <div class="z-20"><pageNav /></div>
 
     <div class="relative pl-40 top-10">
       <crumb />
@@ -21,6 +19,9 @@
       id="generalPOS"
       class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-20"
     >
+      <h1 class="relative pl-40 text-xl font-medium tracking-tight top-8">
+        Order Maintanance
+      </h1>
       <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
         <!-- Payment details -->
         <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-12">

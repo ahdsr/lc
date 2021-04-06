@@ -8,7 +8,9 @@
 
     <div class="z-20"><sideNav /></div>
 
-    <h1 class="relative pl-40 text-xl font-medium tracking-tight top-8">
+    <h1
+      class="relative max-w-full pl-40 text-xl font-medium tracking-tight top-8"
+    >
       Vehicle Configuration
     </h1>
 
@@ -20,7 +22,7 @@
       id="generalPOS"
       class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-20"
     >
-      <div class="bg-transparent shadow-lg">
+      <div class="overflow-x-scroll bg-transparent shadow-lg">
         <div class="flex flex-row bg-transparent">
           <div
             class="flex p-4 bg-white border-2 border-b-0 border-element-bright-blue hover:bg-gray-100"

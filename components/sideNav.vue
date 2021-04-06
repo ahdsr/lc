@@ -80,7 +80,6 @@
             </svg>
             <p class="text-xs">Dashboard</p>
           </nuxt-link>
-          <!-- <p class="text-xs text-gray-800">Home</p> -->
         </div>
 
         <div class="p-4 hover:bg-blue-500">
@@ -99,8 +98,6 @@
                 d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
               />
             </svg>
-
-            <!-- <p class="text-xs text-gray-800">Edit Order</p> -->
           </a>
           <p class="text-xs">Edit Order</p>
         </div>
@@ -121,7 +118,6 @@
             />
           </svg>
           <p class="text-xs">Order Preferences</p>
-          <!-- <p class="text-xs text-gray-800">Order Preferences</p> -->
         </div>
 
         <div class="p-4 hover:bg-blue-500">
@@ -140,7 +136,6 @@
             />
           </svg>
           <p class="text-xs">Code Table</p>
-          <!-- <p class="text-xs text-gray-800">Vehicle Config</p> -->
         </div>
 
         <div class="p-4 hover:bg-blue-500">
@@ -160,8 +155,6 @@
           </svg>
 
           <p class="text-xs">Batch Procressing</p>
-
-          <!-- <p class="text-xs text-gray-800">Codes Tables</p> -->
         </div>
 
         <div class="p-4 hover:bg-blue-500">
@@ -182,7 +175,6 @@
             </svg>
           </nuxt-link>
           <p class="text-xs">BMTs</p>
-          <!-- <p class="text-xs text-gray-800">Batch Processing</p> -->
         </div>
         <div class="p-4 hover:bg-blue-500">
           <svg
@@ -200,7 +192,6 @@
             />
           </svg>
           <p class="text-xs">Change History</p>
-          <!-- <p class="text-xs text-gray-800">BMTs</p> -->
         </div>
 
         <div class="p-4 hover:bg-blue-500">
@@ -240,7 +231,6 @@
             />
           </svg>
           <p class="text-xs">Reference Library</p>
-          <!-- <p class="text-xs text-gray-800">Reference Library</p> -->
         </div>
       </div>
     </aside>

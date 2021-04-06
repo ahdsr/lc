@@ -14,10 +14,10 @@ export default {
         content: 'my website description',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js' },
-    ],
+    // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    // script: [
+    //   { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js' },
+    // ],
     link: [
       {
         rel: 'stylesheet',
@@ -84,4 +84,5 @@ export default {
   // server: {
   //   host: '0.0.0.0',
   // },
+  
 }

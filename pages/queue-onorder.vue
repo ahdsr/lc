@@ -1,45 +1,29 @@
 <template>
-  <div id="app" class="mx-auto text-xs bg-gray-50 sm:text-xs lg:text-sm">
-    <div class="sticky top-0 z-10">
-      <stickyNav />
-    </div>
+  <!--
+  This example requires Tailwind CSS v2.0+
 
-    <nav class="sticky top-0 bg-white"></nav>
+  This example requires some changes to your config:
 
-    <div class="z-20"><sideNav /></div>
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ]
+  }
+  ```
+-->
 
-    <div class="z-30">
-      <sidePanel />
-    </div>
-
-    <h1 class="relative text-xl font-medium tracking-tight top-8 left-40">
-      On Order-Queue
-    </h1>
-
-    <div class="relative top-10 left-40">
-      <crumb />
-    </div>
-
-    <main
-      id="generalPOS"
-      class="mx-auto pb-14 lg:py-8 lg:pl-40 lg:pr-12 lg:pt-20"
-    >
-      <div class="shadow-lg sm:rounded-md sm:overflow-hidden">
-        <div class="bg-white">
-          <queOnOrder :property="property" />
-        </div>
-      </div>
-    </main>
-  </div>
+  <div id="app"></div>
 </template>
 
 <script>
-import queOnOrder from '~/components/queOnOrder'
-
 export default {
   name: 'app',
   components: {
-    queOnOrder,
+    leftNavigation,
   },
 
   data() {

@@ -16,9 +16,6 @@
       <crumb />
     </div>
 
-
-
-
     <div class="relative pl-40 mx-auto pt-14">
       <div class="relative lg:grid lg:grid-cols-4 lg:gap-x-8">
         <div class="col-span-1">
@@ -106,8 +103,6 @@
               On-Order Queue
             </p>
           </nuxt-link>
-        </div>
-
         </div>
       </div>
     </div>

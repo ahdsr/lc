@@ -47,3 +47,10 @@
     /* backdrop-filter: saturate(80%); */
   }
 }
+
+.column {
+  @apply p-3 text-xs font-bold text-left text-element-dark-blue;
+}
+.tdcommon {
+  @apply p-3 text-xs text-gray-800;
+}
