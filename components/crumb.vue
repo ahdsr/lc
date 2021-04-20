@@ -52,18 +52,7 @@
 </template>
 
 <script>
-export default {
-  props: {
-    property: {
-      type: Object,
-
-      default() {
-        // Why like this?
-        return {}
-      },
-    },
-  },
-}
+export default {}
 </script>
 
 <style></style>
